@@ -1,0 +1,17 @@
+.header_navlink {
+  text-decoration: inherit;
+  color: inherit;
+  transition: all ease 500ms;
+}
+
+.header_navlink_active {
+  text-decoration: inherit;
+  color: white;
+  transition: all ease 500ms;
+}
+
+.header_navlink_hover:hover {
+  text-decoration: inherit;
+  color: white;
+  transition: all ease 500ms;
+}

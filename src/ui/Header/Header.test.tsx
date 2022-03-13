@@ -1,27 +1,20 @@
-import { shallow } from "enzyme";
+import { mount } from "enzyme";
 import { Navigation } from "../../consts";
 import { Header } from "./Header";
 
 describe("Test Header Component", () => {
-  let wrapper = shallow(<Header />);
+  let wrapper = mount(<Header />);
   beforeEach(() => {
-    wrapper = shallow(<Header />);
+    wrapper = mount(<Header />);
   });
   test("Is Header has bg primary", () => {
-    expect(wrapper.find("#nav").props().bg).toBe("primary");
+    expect(wrapper.find("#nav").prop('bg')).toBe("primary");
   });
   test("Is header has variant dark", () => {
-    expect(wrapper.find("#nav").props().variant).toBe("dark");
+    expect(wrapper.find("#nav").prop('variant')).toBe("dark");
   });
   test("Is link early-years exist", () => {
     expect(wrapper.find("#early-years").text()).toBe(Navigation.EarlyYears);
-  });
-  test("Click on route early-years", () => {
-    const link = wrapper.find("#early-years");
-
-    link.simulate("click");
-
-    expect(window.location.href).toContain("early-years");
   });
   test("Is link azov-war exist", () => {
     expect(wrapper.find("#azov-war").text()).toBe(Navigation.AzovWar);

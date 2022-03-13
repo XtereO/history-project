@@ -1,7 +1,7 @@
 import { memo } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
 import { Navigation } from "../../consts";
+import { HeaderNavLink } from "../Bricks/HeaderNavLink";
 
 export const Header = memo(() => {
   return (
@@ -9,10 +9,10 @@ export const Header = memo(() => {
       <Navbar bg={"primary"} variant={"dark"} id={"nav"}>
         <Container>
           <Nav className="me-auto">
-            <NavLink id={"early-years"} to={"early-years"}><Nav.Link>{Navigation.EarlyYears}</Nav.Link></NavLink>
-            <NavLink id={"azov-war"} to={"azov-war"}><Nav.Link>{Navigation.AzovWar}</Nav.Link></NavLink>
-            <Nav.Link id={"great-journey"}>{Navigation.GreatJourney}</Nav.Link>
-            <Nav.Link id={"sweden-war"}>{Navigation.SwedenWar}</Nav.Link>
+            <HeaderNavLink id={"early-years"} to={"/early-years"} title={Navigation.EarlyYears} />
+            <HeaderNavLink id={"azov-war"} to={"/azov-war"} title={Navigation.AzovWar}/>
+            <HeaderNavLink id={"great-journey"} to={"/great-journey"} title={Navigation.GreatJourney} /> 
+            <HeaderNavLink id={"sweden-war"} to={"/sweden-war"} title={Navigation.SwedenWar}/>
           </Nav>
         </Container>
       </Navbar>
