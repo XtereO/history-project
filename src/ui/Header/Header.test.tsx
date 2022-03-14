@@ -1,28 +1,41 @@
 import { mount } from "enzyme";
+import { withRouter } from "../HOC";
 import { Navigation } from "../../consts";
 import { Header } from "./Header";
 
 describe("Test Header Component", () => {
-  let wrapper = mount(<Header />);
+  let wrapper = mount(withRouter(<Header />)());
   beforeEach(() => {
-    wrapper = mount(<Header />);
+    wrapper = mount(withRouter(<Header />)())
   });
   test("Is Header has bg primary", () => {
-    expect(wrapper.find("#nav").prop('bg')).toBe("primary");
+    expect(wrapper.find("#nav").get(0).props).toHaveProperty("bg","primary");
   });
   test("Is header has variant dark", () => {
-    expect(wrapper.find("#nav").prop('variant')).toBe("dark");
+    expect(wrapper.find("#nav").get(0).props).toHaveProperty("variant","dark");
   });
+  test("Is header has sticky top", () => {
+    expect(wrapper.find("#nav").get(0).props).toHaveProperty("sticky","top");
+  });
+  test("Is header expand md", ()=>{
+    expect(wrapper.find("#nav").get(0).props).toHaveProperty("expand","md")
+  })
+  test("Is button toggle exist", ()=>{
+    expect(!!wrapper.find("#btn-toggle").get(0)).toBe(true)
+  })
+  test("Is brand link exist", () => {
+    expect(!!wrapper.find("#brand-link").get(0)).toBe(true)
+  })
   test("Is link early-years exist", () => {
-    expect(wrapper.find("#early-years").text()).toBe(Navigation.EarlyYears);
+    expect(wrapper.find("#early-years").get(0).props).toHaveProperty("id",Navigation.EarlyYears);
   });
   test("Is link azov-war exist", () => {
-    expect(wrapper.find("#azov-war").text()).toBe(Navigation.AzovWar);
+    expect(wrapper.find("#azov-war").get(0).props).toHaveProperty("id",Navigation.AzovWar);
   });
   test("Is link great-journey exist", () => {
-    expect(wrapper.find("#great-journey").text()).toBe(Navigation.GreatJourney);
+    expect(wrapper.find("#great-journey").get(0).props).toHaveProperty("id",Navigation.GreatJourney);
   });
   test("Is link sweden-war exist", () => {
-    expect(wrapper.find("#sweden-war").text()).toBe(Navigation.SwedenWar);
+    expect(wrapper.find("#sweden-war").get(0).props).toHaveProperty("id",Navigation.SwedenWar);
   });
 });

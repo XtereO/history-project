@@ -1,17 +1,21 @@
+.header_navlink_wrapper{
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .header_navlink {
-  text-decoration: inherit;
-  color: inherit;
+  text-decoration: none;
+  color: #92BEFE;
   transition: all ease 500ms;
 }
 
 .header_navlink_active {
-  text-decoration: inherit;
+  text-decoration: none;
   color: white;
   transition: all ease 500ms;
 }
 
 .header_navlink_hover:hover {
-  text-decoration: inherit;
+  text-decoration: none;
   color: white;
   transition: all ease 500ms;
 }

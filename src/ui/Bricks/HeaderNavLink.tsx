@@ -10,18 +10,18 @@ type Props = {
 };
 export const HeaderNavLink = memo<Props>(({ id, to, title }) => {
   return (
-    <Nav.Link>
+    <div className="header_navlink_wrapper">
       <NavLink
         className={({ isActive }) =>
           isActive
             ? "header_navlink_active header_navlink_hover"
             : "header_navlink header_navlink_hover"
         }
-        to={to}
+        to={`/${to}`}
         id={id}
       >
         {title}
       </NavLink>
-    </Nav.Link>
+    </div>
   );
 });

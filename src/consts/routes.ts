@@ -1,6 +1,13 @@
 export enum Navigation {
-    "EarlyYears" = "Ранние годы",
-    "AzovWar" = "Поход на Азов",
-    "GreatJourney" = "Великое посольство",
-    "SwedenWar" = "Война со Швецией", 
+  "EarlyYears" = "early-years",
+  "AzovWar" = "azov-war",
+  "GreatJourney" = "great-journey",
+  "SwedenWar" = "sweden-war",
+}
+
+export enum Translation {
+  "EarlyYears" = "Ранние годы",
+  "AzovWar" = "Взятие Азова",
+  "GreatJourney" = "Великое Посольство",
+  "SwedenWar" = "Война со Швецией",
 }

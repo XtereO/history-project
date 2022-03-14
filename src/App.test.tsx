@@ -1,22 +1,22 @@
 import { mount } from "enzyme";
 import App from "./App";
+import { withRouter } from "./ui/HOC";
 
 describe("Test App component", () => {
-  let wrapper = mount(<App />);
+  let wrapper = mount(withRouter(<App />)());
   beforeEach(() => {
-    wrapper = mount(<App />);
+    wrapper = mount(withRouter(<App />)());
   });
-
   test("Is Header render", () => {
-    expect(wrapper.find("#header").isEmptyRender()).toBe(false);
+    expect(!!wrapper.find("#header")).toBe(true);
   });
   test("Is Banner render", () => {
-    expect(wrapper.find("#banner").isEmptyRender()).toBe(false);
+    expect(!!wrapper.find("#banner")).toBe(true);
   });
   test("Is Article render", () => {
-    expect(wrapper.find("#article").isEmptyRender()).toBe(false);
+    expect(!!wrapper.find("#article")).toBe(true);
   });
   test("Is Footer render", () => {
-    expect(wrapper.find("#footer").isEmptyRender()).toBe(false);
+    expect(!!wrapper.find("#footer")).toBe(true);
   });
 });
