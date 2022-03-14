@@ -13,9 +13,16 @@ describe("Test HeaderNavLink component", () => {
   test("Is title rendered", () => {
     expect(wrapper.find("#link").text()).toContain("title link");
   });
-  test("Is click work", () => {
-    const mEvent = { stopPropagation: jest.fn(), preventDefault: jest.fn() };
-    wrapper.simulate("click", mEvent);
-    expect(mEvent.stopPropagation).toBeCalledTimes(1);
+  test("Is active link have right className", () => {
+    expect(
+      //@ts-ignore
+      wrapper.find("#link").prop("className")({ isActive: true })
+    ).toContain("header_navlink_active");
+  });
+  test("Is link have right className", () => {
+    expect(
+      //@ts-ignore
+      wrapper.find("#link").prop("className")({ isActive: false })
+    ).toContain("header_navlink_hover");
   });
 });
