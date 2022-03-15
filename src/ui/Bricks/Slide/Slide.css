@@ -1,0 +1,16 @@
+.slide-animation {
+  position: relative;
+  animation: appear 500ms linear forwards;
+}
+@keyframes appear {
+  0% {
+    position: relative;
+    top: -70px;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    top: 0;
+    opacity: 1;
+  }
+}

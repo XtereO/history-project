@@ -1,6 +1,7 @@
 import React from "react";
 
 export type Slide = {
+  slideId: number;
   left: Position;
   center: Position;
   right: Position;

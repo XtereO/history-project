@@ -1,9 +1,21 @@
-import { memo } from "react";
+import { memo, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
+import { useDispatch } from "react-redux";
+import { useLocation } from "react-router-dom";
 import { Navigation, Translation } from "../../consts";
-import { HeaderNavLink } from "../Bricks/HeaderNavLink";
+import { HeaderNavLink } from "../Bricks/HeaderNavLink/HeaderNavLink";
+import { presentationActions } from "../../bll/reducers/presentationReducer";
 
 export const Header = memo(() => {
+  const dispatch = useDispatch();
+  const location = useLocation();
+  useEffect(() => {
+    if (location.pathname) {
+      dispatch(
+        presentationActions.setTheme(location.pathname.slice(1) as Navigation)
+      );
+    }
+  }, [location.pathname]);
   return (
     <header id={"header"}>
       <Navbar
