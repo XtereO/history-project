@@ -8,10 +8,10 @@ describe("Test Slide Component", ()=>{
         wrapper = shallow(<Slide {...testSlide} />)
     })
     test("Has slide-container margin top", ()=>{
-        expect(wrapper.find("#slide-container5").prop("style")).toHaveProperty("marginTop","10px")
+        expect(wrapper.find("#slide-container5").prop("style")).toHaveProperty("marginTop","20px")
     })
     test("Has slide-container margin bottom", ()=>{
-        expect(wrapper.find("#slide-container5").prop("style")).toHaveProperty("marginBottom","10px")
+        expect(wrapper.find("#slide-container5").prop("style")).toHaveProperty("marginBottom","20px")
     })
     test("Has slide-container class container", ()=>{
         expect(wrapper.find("#slide-container5").prop("className")).toContain("container")

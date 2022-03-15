@@ -6,8 +6,8 @@ import { testSlide } from "./TestData";
 
 export const Slide = memo<Props>(({ center, bottom, slideId }) => {
   const { inView, ref } = useInView();
-  const marginTopContainer = "10px";
-  const marginBottomContainer = "10px";
+  const marginTopContainer = "20px";
+  const marginBottomContainer = "20px";
   return (
     <div
       ref={ref}
