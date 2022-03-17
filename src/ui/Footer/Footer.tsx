@@ -13,7 +13,7 @@ export const Footer = memo(() => {
           flexDirection: "row",
           justifyContent: "end",
           color: "white",
-          paddingRight: "20px"
+          paddingRight: "20px",
         }}
       >
         Источник: Н. И. Павленко Петр I

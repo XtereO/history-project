@@ -13,5 +13,5 @@ export const Article = memo(() => {
     //@ts-ignore
     setContent(db[theme ?? Navigation.Home])
   },[theme])
-  return <article id={"article"}>{content.map((c:SlideType)=><Slide {...c} key={`slide${c.slideId}`} />)}</article>;
+  return <article style={{minHeight:"calc(100vh - 115px)"}} id={"article"}>{content.map((c:SlideType)=><Slide {...c} key={`slide${c.slideId}`} />)}</article>;
 });
