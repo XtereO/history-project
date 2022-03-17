@@ -19,6 +19,7 @@ export const Header = memo(() => {
   return (
     <header id={"header"}>
       <Navbar
+        fixed={"top"}
         expand={"md"}
         bg={"primary"}
         variant={"dark"}

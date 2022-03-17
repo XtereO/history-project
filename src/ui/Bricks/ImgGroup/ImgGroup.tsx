@@ -1,4 +1,5 @@
 import { memo } from "react";
+import "./ImgGroup.css";
 
 type Props = {
   imgs: React.ReactNode[];
@@ -10,9 +11,10 @@ export const ImgGroup = memo<Props>(({ imgs }) => {
         display: "flex",
         flexDirection: "row",
         flexFlow: "wrap",
-        gap:20,
+        gap: 20,
         justifyContent: "center",
-        minHeight: 200,
+        marginTop: 10,
+        overflowX: "hidden",
       }}
     >
       {imgs}

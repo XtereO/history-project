@@ -3,6 +3,44 @@ import { ImgGroup } from "../ui/Bricks/ImgGroup/ImgGroup";
 import { cS } from "./createSlide";
 import bow from "../assets/slides/bow.png"
 import baraban from "../assets/slides/baraban.png"
+import NikitaZotov from "../assets/slides/NikitaZotov.png"
+import molot from "../assets/slides/molot.png";
+import brusok from "../assets/slides/brusok.png";
+import gun from "../assets/slides/gun.png";
+import sword from "../assets/slides/sword.png";
+import sea from "../assets/slides/sea.png";
+import Yauza from "../assets/slides/Yauza.png";
+import KojuhovskieActions from "../assets/slides/KojuhovskieActions.png"
+import Natasha from "../assets/slides/Natasha.png"
+import Evdokia from "../assets/slides/Evdokia.png"
+import Patrik from "../assets/slides/Patrik.png"
+import Lefort from "../assets/slides/Lefort.png"
+import PetrMakesShip from "../assets/slides/PetrMakesShip.png";
+import Archangel from "../assets/slides/Archangel.png";
+import AzovsShips from "../assets/slides/AzovsShips.png";
+import AzovsMapAttack from "../assets/slides/AzovsMapAttack.png";
+import vicktoryAzov from "../assets/slides/vicktoryAzov.png";
+import posolstvo from "../assets/slides/posolstvo.png"
+import PetrStudying from "../assets/slides/PetrStudying.png"
+import mapPosolstvo from "../assets/slides/mapPosolstvo.png"
+import PetrInKeninsberg from "../assets/slides/PetrInKeninsberg.png"
+import NavSchool from "../assets/slides/NavSchool.png"
+import SeaSchool from "../assets/slides/SeaSchool.png";
+import VoronejsVerf from "../assets/slides/VoronejsVerf.png";
+import NarvaWar1 from "../assets/slides/NarvaWar1.png"
+import August2 from "../assets/slides/August2.png";
+import Karl12 from "../assets/slides/Karl12.png"
+import NovodvinskayaCastle from "../assets/slides/NovodvinskayCastle.png"
+import NovodvinskayaBattle from "../assets/slides/NovodvinskayaBattle.png";
+import BattleErestfer from "../assets/slides/BattleErestfer.png"
+import NoterburgBattle from "../assets/slides/NoterburgBattle.png"
+import takeShipsInTow from "../assets/slides/takeShipsInTow.png"
+import NarvaWar2 from "../assets/slides/NarvaWar2.png"
+import FraushtadtBattle from "../assets/slides/FraushtadtBattle.png";
+import LevengauptBattle from "../assets/slides/LevengauptBattle.png"
+import PoltavaBattle from "../assets/slides/PoltavaBattle.png"
+import AfterPoltavaBattle from "../assets/slides/AfterPoltavaBattle.png";
+import GangutBattle from "../assets/slides/GangutBattle.png"
 
 export const db = {
   [Navigation.EarlyYears]: [
@@ -12,7 +50,7 @@ export const db = {
         С детства покои царя были окружены деревянными лошадями, пушечками,
         барабанами, луками и стрелами.
       </>,
-      <ImgGroup imgs={[<img src={bow}/>,<img src={baraban}/>]} />
+      <ImgGroup imgs={[<img src={bow}/>,<img  src={baraban}/>]} />
     ),
     cS(
       2,
@@ -20,20 +58,22 @@ export const db = {
         <div>
           С 8 лет обучался грамоте. Его учителя были Никита Зотов и Афанасий
           Нестеров. Многому ему они не научили: читать и писать, произносить
-          некоторые тексты богослужебных книг, немного истории и географии.{" "}
+          некоторые тексты богослужебных книг, немного истории и географии.
         </div>
         <div>
           Помимо этого Петр обнаружил знания в артиллерии и кораблестроении.
           Этим он обязан собственной одаренности и тяги к знаниям.
         </div>
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={NikitaZotov} />]}/>
     ),
     cS(
       3,
       <>
         Также с детства проявлял интерес в ремесле. В его руках побывали
         инструменты каменщика и плотника, столяра и кузнеца.
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={molot} />,<img src={brusok} />]} />
     ),
     cS(
       4,
@@ -43,7 +83,8 @@ export const db = {
           заменялись боевыми, настоящие сабли, были и пистолеты.
         </div>
         <div>Также вел военные игры со сверстниками в Преображенском. </div>
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={gun} />,<img src={sword}/>]} />
     ),
     cS(
       5,
@@ -54,7 +95,8 @@ export const db = {
           рассказом: “Инструмент, которым можно было брать дистанции или
           расстояния, не доходя до того места”
         </div>
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={sea}/>]} />
     ),
     cS(
       6,
@@ -68,7 +110,8 @@ export const db = {
           время упирался в берега, поэтому в следующий раз поехал на Просяной
           пруд. Но и тут было мало место. В итоге он нашел Переяславское озеро.
         </div>
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={Yauza} />]} />
     ),
     cS(
       7,
@@ -82,7 +125,8 @@ export const db = {
           Кожуховские маневры – это были последние потехи царя в 1694
           году(сентябрь - октябрь).
         </div>
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={KojuhovskieActions} />]} />
     ),
     cS(
       8,
@@ -96,7 +140,8 @@ export const db = {
           В итоге мать его поженила на Евдокии Лопухиной в 27 январе 1689 года,
           но Петр по-прежнему был верен своим делам.
         </div>
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={Natasha} />,<img src={Evdokia} />]}/>
     ),
     cS(
       9,
@@ -105,7 +150,8 @@ export const db = {
         царя пользовались два человека: Патрик Гордон и женевец Франц Лефорт.
         Первый был наставником Петра в военных делах. Второй же ввел царя в
         дамское общество и был его поверенным в отношениях с Анной Монс.
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={Patrik}/>,<img src={Lefort} />]} />
     ),
     cS(
       10,
@@ -130,7 +176,8 @@ export const db = {
           Москве-реке, Оке и Волге, а другая по Дону. В марте армия отправилась
           в путь.
         </div>
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={Archangel} />]} />
     ),
     cS(
       12,
@@ -145,7 +192,8 @@ export const db = {
           прибывало подкрепления на кораблях. Русские не могли остановить
           приходившие войска, так как у них не было флота.{" "}
         </div>
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={AzovsShips} />]}/>
     ),
     cS(
       13,
@@ -187,7 +235,8 @@ export const db = {
         В первую очередь Петр упорядочил войска: в этот раз решил поделить армию
         только на две части, а именно на сухопутные под командованием Алексея
         Семеновича Шеина и на флот с Лефортом.
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={AzovsMapAttack} />]}/>
     ),
     cS(
       16,
@@ -199,9 +248,10 @@ export const db = {
         </div>
         <div>
           Постройки велись в Воронеже. В деле участвовало около тысячи плотников
-          и сам царь с топором в руках.{" "}
-        </div>{" "}
-      </>
+          и сам царь с топором в руках.
+        </div>
+      </>,
+      <ImgGroup imgs={[<img src={PetrMakesShip}/>]} />
     ),
     cS(
       17,
@@ -210,7 +260,7 @@ export const db = {
           В начале мая 27 судов двинулись на юг. В конце месяца войска заняли
           прошлогодние траншеи и начали обстрел крепости. До штурма крепости
           дело не дошло – ее судьбу решил флот. На кораблях стрелял и “Первый
-          бомбардир”.{" "}
+          бомбардир”.
         </div>
         <div>
           Крепость оказалось в кольце блокады, и гарнизон принял условия
@@ -234,7 +284,8 @@ export const db = {
           Также его желание взять Азов видно в помощи строения кораблей
           плотникам, что значительно повышало их дух во время работы.
         </div>
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={vicktoryAzov} />]} />
     ),
   ],
   [Navigation.GreatJourney]: [
@@ -254,7 +305,8 @@ export const db = {
           инструменты. По программе каждый должен был овладеть военно-морскими
           знаниями, а также дополнительно кораблестроительными.
         </div>
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={posolstvo} />,<img src={mapPosolstvo} />]} />
     ),
     cS(
       20,
@@ -270,7 +322,8 @@ export const db = {
       <>
         Потом Петр отправился в Кенигсберг. Тут он договорился с Бранденбургским
         Фридрихом III в устном соглашении о союзе против Швеции.
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={PetrInKeninsberg} />]} />
     ),
     cS(
       22,
@@ -294,8 +347,9 @@ export const db = {
         зачислить Петра и волонтеров на верфь этой компании. Директора компании
         заложили специальный корабль, чтобы русские имели возможность
         ознакомиться со всеми этапами его сооружения и оснастки. По окончании
-        Петр получил аттестат плотника.{" "}
-      </>
+        Петр получил аттестат плотника.
+      </>,
+      <ImgGroup imgs={[<img src={PetrStudying} />]} />
     ),
     cS(
       24,
@@ -307,7 +361,8 @@ export const db = {
         Познакомился с известным английским математиком Фергарсоном и переговоры
         с ним завершились согласием переехать в Россию. Знания математика
         использовались сначала в Навигацкой школе, а затем в Морской академии.
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={NavSchool} />, <img src={SeaSchool} />]} />
     ),
     cS(
       25,
@@ -325,16 +380,17 @@ export const db = {
           недостатки опытных работников. “Истинно никого мне нет здесь
           помощника” – жаловался царь в одном из писем в декабре 1698 года.
         </div>
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={VoronejsVerf}/>]} />
     ),
     cS(
       26,
       <>
-        В целом за границей царь апросто общался с голландскими мастеровыми,
+        В целом за границей царь запросто общался с голландскими мастеровыми,
         купцами, матросами. Также стремился к знаниям, изучал все вокруг. Помимо
         этого проявлял свою инициативу в простых вещах.{" "}
       </>
-    ),
+    )
   ],
   [Navigation.SwedenWar]: [
     cS(
@@ -393,14 +449,15 @@ export const db = {
           калибров. Был потерян почти весь офицерский состав. Все это при том,
           что шведов было 8-12 тысяч, а русских - 35-40 тысяч.
         </div>
-      </>
+      </>,
+            <ImgGroup imgs={[<img src={NarvaWar1}/>]} />
     ),
     cS(
       31,
       <>
         <div>
           Это сражение наглядно показало отсталость страны и низкую
-          боеспособность армии. Нарва послужила уроком.{" "}
+          боеспособность армии. Нарва послужила уроком.
         </div>
         <div>
           В то время как в лагере Карла раздавались насмешки в адрес русского
@@ -418,16 +475,17 @@ export const db = {
           и заключает с ним союзный договор. Польша была для России бесценным
           союзником: Карл XII после Нарвы хотел разобраться с Августом (считал
           его зачинателем Северного союза), поэтому чем дольше шведы гоняются за
-          ним, тем больше у России времени восстановиться после Нарвы.{" "}
+          ним, тем больше у России времени восстановиться после Нарвы.
         </div>
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={August2} />, <img src={Karl12} />]} />
     ),
     cS(
       33,
       <>
         <div>
           В Новгороде и Пскове царь руководил строительством оборонительных
-          сооружений.{" "}
+          сооружений.
         </div>
         <div>
           Внимание Петра привлек также Архангельск: поступило известие о
@@ -436,7 +494,8 @@ export const db = {
           укрепить. Он велел построить на Малой Двине крепость, получившую
           название Новодвинской.
         </div>
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={NovodvinskayaCastle} />]} />
     ),
     cS(
       34,
@@ -445,7 +504,8 @@ export const db = {
         понесли поражение, потеряв два корабля(было три фрегата и четыре мелких
         судна). В итоге это отбило желание у шведов захватывать этот порт.
         Конечно же, победа вызвала радость неравнодушного к морю короля.{" "}
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={NovodvinskayaBattle} />]} />
     ),
     cS(
       35,
@@ -467,7 +527,8 @@ export const db = {
           Шереметева. Победителей царь щедро наградил, отметив всех – от солдата
           до командующего.
         </div>
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={BattleErestfer} />]}/>
     ),
     cS(
       37,
@@ -484,7 +545,8 @@ export const db = {
           иностранного наблюдателя тем, что русские смогли взять крепость с
           помощью одних лестниц. Петр назвал завоеванный город Шлиссельбург.
         </div>
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={NoterburgBattle} />]} />
     ),
     cS(
       38,
@@ -501,7 +563,8 @@ export const db = {
           течения Невы. Петр участвовал в атаке, командуя одним из отрядов, а
           другим командовал Меншиков.{" "}
         </div>
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={takeShipsInTow} />]} />
     ),
     cS(
       39,
@@ -551,7 +614,8 @@ export const db = {
           самым военная хитрость удалась: выманенные из крепости военные шведы
           были успешны атакованы.
         </div>
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={NarvaWar2} />]} />
     ),
     cS(
       42,
@@ -582,9 +646,10 @@ export const db = {
           которыми командовал Реншильд. Сопротивление здесь оказывали лишь
           русские полки. Четыре часа они мужественно сдерживали шведов, но силы
           были не равны. Шведы проявляли жестокость, зверски убивая раненых и
-          сдавших в плен.{" "}
+          сдавших в плен.
         </div>
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={FraushtadtBattle} />]} />
     ),
     cS(
       44,
@@ -610,7 +675,8 @@ export const db = {
         ночью. До этого Карл XII завоевал Могилово и простоял там почти месяц,
         после чего отправился к Украине. Петр решил победить врагов голодом:
         приказал сжигать деревни, чтобы врагу ничего не досталось.
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={LevengauptBattle} />]} />
     ),
     cS(
       46,
@@ -693,7 +759,8 @@ export const db = {
           Петр сам повел второй батальон в контратаку и восстановил положение.
         </div>
         <div>Шведы дрогнули и впали в панику. Победа была полной. </div>
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={PoltavaBattle} />]} />
     ),
     cS(
       53,
@@ -707,7 +774,8 @@ export const db = {
           шатрах моих обедал, но кода его величество не изволил пожаловать ко
           мне на обед, то прошу вас в шатрах моих отобедать.”
         </div>
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={AfterPoltavaBattle} />]} />
     ),
     cS(
       54,
@@ -724,7 +792,8 @@ export const db = {
           заблуждение. Диверсия сработала и шведы раздробили свои силы и русские
           воспользовались этим.
         </div>
-      </>
+      </>,
+      <ImgGroup imgs={[<img src={GangutBattle} />]} />
     ),
     cS(
       55,
