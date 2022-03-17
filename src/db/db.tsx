@@ -1,46 +1,47 @@
 import { Navigation } from "../consts";
 import { ImgGroup } from "../ui/Bricks/ImgGroup/ImgGroup";
 import { cS } from "./createSlide";
-import bow from "../assets/slides/bow.png"
-import baraban from "../assets/slides/baraban.png"
-import NikitaZotov from "../assets/slides/NikitaZotov.png"
+import bow from "../assets/slides/bow.png";
+import baraban from "../assets/slides/baraban.png";
+import NikitaZotov from "../assets/slides/NikitaZotov.png";
 import molot from "../assets/slides/molot.png";
 import brusok from "../assets/slides/brusok.png";
 import gun from "../assets/slides/gun.png";
 import sword from "../assets/slides/sword.png";
 import sea from "../assets/slides/sea.png";
 import Yauza from "../assets/slides/Yauza.png";
-import KojuhovskieActions from "../assets/slides/KojuhovskieActions.png"
-import Natasha from "../assets/slides/Natasha.png"
-import Evdokia from "../assets/slides/Evdokia.png"
-import Patrik from "../assets/slides/Patrik.png"
-import Lefort from "../assets/slides/Lefort.png"
+import KojuhovskieActions from "../assets/slides/KojuhovskieActions.png";
+import Natasha from "../assets/slides/Natasha.png";
+import Evdokia from "../assets/slides/Evdokia.png";
+import Patrik from "../assets/slides/Patrik.png";
+import Lefort from "../assets/slides/Lefort.png";
 import PetrMakesShip from "../assets/slides/PetrMakesShip.png";
 import Archangel from "../assets/slides/Archangel.png";
 import AzovsShips from "../assets/slides/AzovsShips.png";
 import AzovsMapAttack from "../assets/slides/AzovsMapAttack.png";
 import vicktoryAzov from "../assets/slides/vicktoryAzov.png";
-import posolstvo from "../assets/slides/posolstvo.png"
-import PetrStudying from "../assets/slides/PetrStudying.png"
-import mapPosolstvo from "../assets/slides/mapPosolstvo.png"
-import PetrInKeninsberg from "../assets/slides/PetrInKeninsberg.png"
-import NavSchool from "../assets/slides/NavSchool.png"
+import posolstvo from "../assets/slides/posolstvo.png";
+import PetrStudying from "../assets/slides/PetrStudying.png";
+import mapPosolstvo from "../assets/slides/mapPosolstvo.png";
+import PetrInKeninsberg from "../assets/slides/PetrInKeninsberg.png";
+import NavSchool from "../assets/slides/NavSchool.png";
 import SeaSchool from "../assets/slides/SeaSchool.png";
 import VoronejsVerf from "../assets/slides/VoronejsVerf.png";
-import NarvaWar1 from "../assets/slides/NarvaWar1.png"
+import NarvaWar1 from "../assets/slides/NarvaWar1.png";
 import August2 from "../assets/slides/August2.png";
-import Karl12 from "../assets/slides/Karl12.png"
-import NovodvinskayaCastle from "../assets/slides/NovodvinskayCastle.png"
+import Karl12 from "../assets/slides/Karl12.png";
+import NovodvinskayaCastle from "../assets/slides/NovodvinskayCastle.png";
 import NovodvinskayaBattle from "../assets/slides/NovodvinskayaBattle.png";
-import BattleErestfer from "../assets/slides/BattleErestfer.png"
-import NoterburgBattle from "../assets/slides/NoterburgBattle.png"
-import takeShipsInTow from "../assets/slides/takeShipsInTow.png"
-import NarvaWar2 from "../assets/slides/NarvaWar2.png"
+import BattleErestfer from "../assets/slides/BattleErestfer.png";
+import NoterburgBattle from "../assets/slides/NoterburgBattle.png";
+import takeShipsInTow from "../assets/slides/takeShipsInTow.png";
+import NarvaWar2 from "../assets/slides/NarvaWar2.png";
 import FraushtadtBattle from "../assets/slides/FraushtadtBattle.png";
-import LevengauptBattle from "../assets/slides/LevengauptBattle.png"
-import PoltavaBattle from "../assets/slides/PoltavaBattle.png"
+import LevengauptBattle from "../assets/slides/LevengauptBattle.png";
+import PoltavaBattle from "../assets/slides/PoltavaBattle.png";
 import AfterPoltavaBattle from "../assets/slides/AfterPoltavaBattle.png";
-import GangutBattle from "../assets/slides/GangutBattle.png"
+import GangutBattle from "../assets/slides/GangutBattle.png";
+import PortretPetr1 from "../assets/PortretPetr1.png";
 
 export const db = {
   [Navigation.EarlyYears]: [
@@ -50,7 +51,7 @@ export const db = {
         С детства покои царя были окружены деревянными лошадями, пушечками,
         барабанами, луками и стрелами.
       </>,
-      <ImgGroup imgs={[<img src={bow}/>,<img  src={baraban}/>]} />
+      <ImgGroup imgs={[<img src={bow} />, <img src={baraban} />]} id={1} />
     ),
     cS(
       2,
@@ -65,7 +66,7 @@ export const db = {
           Этим он обязан собственной одаренности и тяги к знаниям.
         </div>
       </>,
-      <ImgGroup imgs={[<img src={NikitaZotov} />]}/>
+      <ImgGroup imgs={[<img src={NikitaZotov} />]} id={2} />
     ),
     cS(
       3,
@@ -73,7 +74,7 @@ export const db = {
         Также с детства проявлял интерес в ремесле. В его руках побывали
         инструменты каменщика и плотника, столяра и кузнеца.
       </>,
-      <ImgGroup imgs={[<img src={molot} />,<img src={brusok} />]} />
+      <ImgGroup imgs={[<img src={molot} />, <img src={brusok} />]} id={3} />
     ),
     cS(
       4,
@@ -84,7 +85,7 @@ export const db = {
         </div>
         <div>Также вел военные игры со сверстниками в Преображенском. </div>
       </>,
-      <ImgGroup imgs={[<img src={gun} />,<img src={sword}/>]} />
+      <ImgGroup imgs={[<img src={gun} />, <img src={sword} />]} id={4} />
     ),
     cS(
       5,
@@ -96,7 +97,7 @@ export const db = {
           расстояния, не доходя до того места”
         </div>
       </>,
-      <ImgGroup imgs={[<img src={sea}/>]} />
+      <ImgGroup imgs={[<img src={sea} />]} id={5} />
     ),
     cS(
       6,
@@ -111,7 +112,7 @@ export const db = {
           пруд. Но и тут было мало место. В итоге он нашел Переяславское озеро.
         </div>
       </>,
-      <ImgGroup imgs={[<img src={Yauza} />]} />
+      <ImgGroup imgs={[<img src={Yauza} />]} id={6} />
     ),
     cS(
       7,
@@ -126,7 +127,7 @@ export const db = {
           году(сентябрь - октябрь).
         </div>
       </>,
-      <ImgGroup imgs={[<img src={KojuhovskieActions} />]} />
+      <ImgGroup imgs={[<img src={KojuhovskieActions} />]} id={7} />
     ),
     cS(
       8,
@@ -141,7 +142,7 @@ export const db = {
           но Петр по-прежнему был верен своим делам.
         </div>
       </>,
-      <ImgGroup imgs={[<img src={Natasha} />,<img src={Evdokia} />]}/>
+      <ImgGroup imgs={[<img src={Natasha} />, <img src={Evdokia} />]} id={8} />
     ),
     cS(
       9,
@@ -151,7 +152,7 @@ export const db = {
         Первый был наставником Петра в военных делах. Второй же ввел царя в
         дамское общество и был его поверенным в отношениях с Анной Монс.
       </>,
-      <ImgGroup imgs={[<img src={Patrik}/>,<img src={Lefort} />]} />
+      <ImgGroup imgs={[<img src={Patrik} />, <img src={Lefort} />]} id={9} />
     ),
     cS(
       10,
@@ -177,7 +178,7 @@ export const db = {
           в путь.
         </div>
       </>,
-      <ImgGroup imgs={[<img src={Archangel} />]} />
+      <ImgGroup imgs={[<img src={Archangel} />]} id={11} />
     ),
     cS(
       12,
@@ -193,7 +194,7 @@ export const db = {
           приходившие войска, так как у них не было флота.{" "}
         </div>
       </>,
-      <ImgGroup imgs={[<img src={AzovsShips} />]}/>
+      <ImgGroup imgs={[<img src={AzovsShips} />]} id={12} />
     ),
     cS(
       13,
@@ -236,7 +237,7 @@ export const db = {
         только на две части, а именно на сухопутные под командованием Алексея
         Семеновича Шеина и на флот с Лефортом.
       </>,
-      <ImgGroup imgs={[<img src={AzovsMapAttack} />]}/>
+      <ImgGroup imgs={[<img src={AzovsMapAttack} />]} id={15} />
     ),
     cS(
       16,
@@ -251,7 +252,7 @@ export const db = {
           и сам царь с топором в руках.
         </div>
       </>,
-      <ImgGroup imgs={[<img src={PetrMakesShip}/>]} />
+      <ImgGroup imgs={[<img src={PetrMakesShip} />]} id={16} />
     ),
     cS(
       17,
@@ -285,7 +286,7 @@ export const db = {
           плотникам, что значительно повышало их дух во время работы.
         </div>
       </>,
-      <ImgGroup imgs={[<img src={vicktoryAzov} />]} />
+      <ImgGroup imgs={[<img src={vicktoryAzov} />]} id={18} />
     ),
   ],
   [Navigation.GreatJourney]: [
@@ -306,7 +307,7 @@ export const db = {
           знаниями, а также дополнительно кораблестроительными.
         </div>
       </>,
-      <ImgGroup imgs={[<img src={posolstvo} />,<img src={mapPosolstvo} />]} />
+      <ImgGroup imgs={[<img src={posolstvo} />, <img src={mapPosolstvo} />]} id={19} />
     ),
     cS(
       20,
@@ -323,7 +324,7 @@ export const db = {
         Потом Петр отправился в Кенигсберг. Тут он договорился с Бранденбургским
         Фридрихом III в устном соглашении о союзе против Швеции.
       </>,
-      <ImgGroup imgs={[<img src={PetrInKeninsberg} />]} />
+      <ImgGroup imgs={[<img src={PetrInKeninsberg} />]} id={21}/>
     ),
     cS(
       22,
@@ -349,7 +350,7 @@ export const db = {
         ознакомиться со всеми этапами его сооружения и оснастки. По окончании
         Петр получил аттестат плотника.
       </>,
-      <ImgGroup imgs={[<img src={PetrStudying} />]} />
+      <ImgGroup imgs={[<img src={PetrStudying} />]} id={23} />
     ),
     cS(
       24,
@@ -362,7 +363,7 @@ export const db = {
         с ним завершились согласием переехать в Россию. Знания математика
         использовались сначала в Навигацкой школе, а затем в Морской академии.
       </>,
-      <ImgGroup imgs={[<img src={NavSchool} />, <img src={SeaSchool} />]} />
+      <ImgGroup imgs={[<img src={NavSchool} />, <img src={SeaSchool} />]} id={24} />
     ),
     cS(
       25,
@@ -381,7 +382,7 @@ export const db = {
           помощника” – жаловался царь в одном из писем в декабре 1698 года.
         </div>
       </>,
-      <ImgGroup imgs={[<img src={VoronejsVerf}/>]} />
+      <ImgGroup imgs={[<img src={VoronejsVerf} />]} id={25} />
     ),
     cS(
       26,
@@ -390,7 +391,7 @@ export const db = {
         купцами, матросами. Также стремился к знаниям, изучал все вокруг. Помимо
         этого проявлял свою инициативу в простых вещах.{" "}
       </>
-    )
+    ),
   ],
   [Navigation.SwedenWar]: [
     cS(
@@ -450,7 +451,7 @@ export const db = {
           что шведов было 8-12 тысяч, а русских - 35-40 тысяч.
         </div>
       </>,
-            <ImgGroup imgs={[<img src={NarvaWar1}/>]} />
+      <ImgGroup imgs={[<img src={NarvaWar1} />]} id={30} />
     ),
     cS(
       31,
@@ -478,7 +479,7 @@ export const db = {
           ним, тем больше у России времени восстановиться после Нарвы.
         </div>
       </>,
-      <ImgGroup imgs={[<img src={August2} />, <img src={Karl12} />]} />
+      <ImgGroup imgs={[<img src={August2} />, <img src={Karl12} />]} id={32} />
     ),
     cS(
       33,
@@ -495,7 +496,7 @@ export const db = {
           название Новодвинской.
         </div>
       </>,
-      <ImgGroup imgs={[<img src={NovodvinskayaCastle} />]} />
+      <ImgGroup imgs={[<img src={NovodvinskayaCastle} />]} id={33} />
     ),
     cS(
       34,
@@ -505,7 +506,7 @@ export const db = {
         судна). В итоге это отбило желание у шведов захватывать этот порт.
         Конечно же, победа вызвала радость неравнодушного к морю короля.{" "}
       </>,
-      <ImgGroup imgs={[<img src={NovodvinskayaBattle} />]} />
+      <ImgGroup imgs={[<img src={NovodvinskayaBattle} />]} id={34}/>
     ),
     cS(
       35,
@@ -528,7 +529,7 @@ export const db = {
           до командующего.
         </div>
       </>,
-      <ImgGroup imgs={[<img src={BattleErestfer} />]}/>
+      <ImgGroup imgs={[<img src={BattleErestfer} />]} id={36} />
     ),
     cS(
       37,
@@ -546,7 +547,7 @@ export const db = {
           помощью одних лестниц. Петр назвал завоеванный город Шлиссельбург.
         </div>
       </>,
-      <ImgGroup imgs={[<img src={NoterburgBattle} />]} />
+      <ImgGroup imgs={[<img src={NoterburgBattle} />]} id={37} />
     ),
     cS(
       38,
@@ -564,7 +565,7 @@ export const db = {
           другим командовал Меншиков.{" "}
         </div>
       </>,
-      <ImgGroup imgs={[<img src={takeShipsInTow} />]} />
+      <ImgGroup imgs={[<img src={takeShipsInTow} />]} id={38} />
     ),
     cS(
       39,
@@ -615,7 +616,7 @@ export const db = {
           были успешны атакованы.
         </div>
       </>,
-      <ImgGroup imgs={[<img src={NarvaWar2} />]} />
+      <ImgGroup imgs={[<img src={NarvaWar2} />]} id={41} />
     ),
     cS(
       42,
@@ -649,7 +650,7 @@ export const db = {
           сдавших в плен.
         </div>
       </>,
-      <ImgGroup imgs={[<img src={FraushtadtBattle} />]} />
+      <ImgGroup imgs={[<img src={FraushtadtBattle} />]} id={43} />
     ),
     cS(
       44,
@@ -676,7 +677,7 @@ export const db = {
         после чего отправился к Украине. Петр решил победить врагов голодом:
         приказал сжигать деревни, чтобы врагу ничего не досталось.
       </>,
-      <ImgGroup imgs={[<img src={LevengauptBattle} />]} />
+      <ImgGroup imgs={[<img src={LevengauptBattle} />]} id={45} />
     ),
     cS(
       46,
@@ -760,7 +761,7 @@ export const db = {
         </div>
         <div>Шведы дрогнули и впали в панику. Победа была полной. </div>
       </>,
-      <ImgGroup imgs={[<img src={PoltavaBattle} />]} />
+      <ImgGroup imgs={[<img src={PoltavaBattle} />]} id={52} />
     ),
     cS(
       53,
@@ -775,7 +776,7 @@ export const db = {
           мне на обед, то прошу вас в шатрах моих отобедать.”
         </div>
       </>,
-      <ImgGroup imgs={[<img src={AfterPoltavaBattle} />]} />
+      <ImgGroup imgs={[<img src={AfterPoltavaBattle} />]} id={53} />
     ),
     cS(
       54,
@@ -793,7 +794,7 @@ export const db = {
           воспользовались этим.
         </div>
       </>,
-      <ImgGroup imgs={[<img src={GangutBattle} />]} />
+      <ImgGroup imgs={[<img src={GangutBattle} />]} id={54} />
     ),
     cS(
       55,
@@ -809,10 +810,11 @@ export const db = {
       </>
     ),
   ],
-  ["home"]: [
+  [Navigation.Home]: [
     cS(
       0,
-      "Петр I любознательный человек, который пытался изучить все, что было вокруг него. Интересовался ремеслом, наукой, мореплаванием, военным делом. Также стоит отметить, что царь легко общался с простыми солдатами и ремесленниками. Оценивал людей по их талантам и навыками, а не происхождению. Участвовал в войнах “не жалея живота”. Выражал честь перед поверженными противниками. В общем замечательный человек!"
+      "Петр I любознательный человек, который пытался изучить все, что было вокруг него. Интересовался ремеслом, наукой, мореплаванием, военным делом. Также стоит отметить, что царь легко общался с простыми солдатами и ремесленниками. Оценивал людей по их талантам и навыками, а не происхождению. Участвовал в войнах “не жалея живота”. Выражал честь перед поверженными противниками. В общем замечательный человек!",
+      <ImgGroup imgs={[<img src={PortretPetr1}/>]} id={0} />
     ),
   ],
 };

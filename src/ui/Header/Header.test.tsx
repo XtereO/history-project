@@ -11,13 +11,13 @@ describe("Test Header Component", () => {
   test("Is Header has bg primary", () => {
     expect(wrapper.find("#nav").get(0).props).toHaveProperty("bg","primary");
   });
-  test("Is header has variant dark", () => {
+  test("Is Header has variant dark", () => {
     expect(wrapper.find("#nav").get(0).props).toHaveProperty("variant","dark");
   });
-  test("Is header has sticky top", () => {
+  test("Is Header has sticky top", () => {
     expect(wrapper.find("#nav").get(0).props).toHaveProperty("sticky","top");
   });
-  test("Is header expand md", ()=>{
+  test("Is Header expand md", ()=>{
     expect(wrapper.find("#nav").get(0).props).toHaveProperty("expand","md")
   })
   test("Is button toggle exist", ()=>{
@@ -25,6 +25,9 @@ describe("Test Header Component", () => {
   })
   test("Is brand link exist", () => {
     expect(!!wrapper.find("#brand-link").get(0)).toBe(true)
+  })
+  test("Is link home exist", ()=>{
+    expect(wrapper.find("#home").get(0).props).toHaveProperty("id",Navigation.Home)
   })
   test("Is link early-years exist", () => {
     expect(wrapper.find("#early-years").get(0).props).toHaveProperty("id",Navigation.EarlyYears);

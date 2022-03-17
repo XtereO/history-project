@@ -10,9 +10,6 @@ describe("Test App component", () => {
   test("Is Header render", () => {
     expect(!!wrapper.find("#header")).toBe(true);
   });
-  test("Is Banner render", () => {
-    expect(!!wrapper.find("#banner")).toBe(true);
-  });
   test("Is Article render", () => {
     expect(!!wrapper.find("#article")).toBe(true);
   });

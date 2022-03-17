@@ -17,7 +17,6 @@ export const Slide = memo<Props>(({ center, bottom, slideId }) => {
       }}
       className={`${inView && "slide-animation"} container`}
       id={`slide-container${slideId}`}
-      key={`slide${slideId}`}
     >
       <div id={`slide-center${slideId}`}>{center}</div>
       <div id={`slide-bottom${slideId}`}>{bottom}</div>

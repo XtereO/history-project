@@ -2,11 +2,13 @@ import { memo } from "react";
 import "./ImgGroup.css";
 
 type Props = {
+  id: number;
   imgs: React.ReactNode[];
 };
-export const ImgGroup = memo<Props>(({ imgs }) => {
+export const ImgGroup = memo<Props>(({ imgs, id }) => {
   return (
     <div
+      id={`idImgGroup${id}`}
       style={{
         display: "flex",
         flexDirection: "row",
