@@ -15,7 +15,7 @@ describe("Test Header Component", () => {
     expect(wrapper.find("#nav").get(0).props).toHaveProperty("variant","dark");
   });
   test("Is Header has sticky top", () => {
-    expect(wrapper.find("#nav").get(0).props).toHaveProperty("sticky","top");
+    expect(wrapper.find("#nav").get(0).props).toHaveProperty("fixed","top");
   });
   test("Is Header expand md", ()=>{
     expect(wrapper.find("#nav").get(0).props).toHaveProperty("expand","md")

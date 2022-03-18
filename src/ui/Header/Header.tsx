@@ -23,7 +23,7 @@ export const Header = memo(() => {
   return (
     <header id={"header"}>
       <Navbar
-        sticky={"top"}
+        fixed={"top"}
         expand={"md"}
         bg={"primary"}
         variant={"dark"}

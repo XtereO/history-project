@@ -1,5 +1,6 @@
 import { memo, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import "./Article.css"
 import { getTheme } from "../../bll/selectors/presentationSelector";
 import { db } from "../../db/db";
 import { Slide } from "../Bricks/Slide/Slide";
@@ -13,5 +14,5 @@ export const Article = memo(() => {
     //@ts-ignore
     setContent(db[theme ?? Navigation.Home])
   },[theme])
-  return <article style={{minHeight:"calc(100vh - 115px)"}} id={"article"}>{content.map((c:SlideType)=><Slide {...c} key={`slide${c.slideId}`} />)}</article>;
+  return <article id={"article"}>{content.map((c:SlideType)=><Slide {...c} key={`slide${c.slideId}`} />)}</article>;
 });
