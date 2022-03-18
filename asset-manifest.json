@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/history-project/static/css/main.12355bfa.css",
-    "main.js": "/history-project/static/js/main.b74fd62a.js",
+    "main.js": "/history-project/static/js/main.a5cbe656.js",
     "static/js/787.1cb401b3.chunk.js": "/history-project/static/js/787.1cb401b3.chunk.js",
     "static/media/NarvaWar2.png": "/history-project/static/media/NarvaWar2.e2a00d48ce317a94cf82.png",
     "static/media/PortretPetr1.png": "/history-project/static/media/PortretPetr1.c5994c49f337b329c344.png",
@@ -46,11 +46,11 @@
     "static/media/sword.png": "/history-project/static/media/sword.a6a59fbe2e72f04b348f.png",
     "index.html": "/history-project/index.html",
     "main.12355bfa.css.map": "/history-project/static/css/main.12355bfa.css.map",
-    "main.b74fd62a.js.map": "/history-project/static/js/main.b74fd62a.js.map",
+    "main.a5cbe656.js.map": "/history-project/static/js/main.a5cbe656.js.map",
     "787.1cb401b3.chunk.js.map": "/history-project/static/js/787.1cb401b3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.12355bfa.css",
-    "static/js/main.b74fd62a.js"
+    "static/js/main.a5cbe656.js"
   ]
 }
