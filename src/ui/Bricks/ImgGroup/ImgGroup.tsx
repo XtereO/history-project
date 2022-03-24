@@ -1,12 +1,14 @@
 import { memo } from "react";
-import "./ImgGroup.css";
+import styles from "./ImgGroup.module.css";
 
 type Props = {
   id: number;
+  desription?: string;
   imgs: React.ReactNode[];
 };
-export const ImgGroup = memo<Props>(({ imgs, id }) => {
+export const ImgGroup = memo<Props>(({ imgs, desription, id }) => {
   return (
+    <div>
     <div
       id={`idImgGroup${id}`}
       style={{
@@ -20,6 +22,10 @@ export const ImgGroup = memo<Props>(({ imgs, id }) => {
       }}
     >
       {imgs}
+    </div>
+    <div className={styles.imgGroup__textGray} id={`img-description-${id}`}>
+      {desription}
+    </div>
     </div>
   );
 });
