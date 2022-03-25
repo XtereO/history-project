@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/history-project/static/css/main.fe353895.css",
-    "main.js": "/history-project/static/js/main.fd9d8866.js",
+    "main.js": "/history-project/static/js/main.16d12cbd.js",
     "static/js/787.1cb401b3.chunk.js": "/history-project/static/js/787.1cb401b3.chunk.js",
     "static/media/NarvaWar2.png": "/history-project/static/media/NarvaWar2.e2a00d48ce317a94cf82.png",
     "static/media/PortretPetr1.png": "/history-project/static/media/PortretPetr1.c5994c49f337b329c344.png",
@@ -10,6 +10,8 @@
     "static/media/NarvaWar1.png": "/history-project/static/media/NarvaWar1.63d85f91c872e7a19013.png",
     "static/media/Archangel.png": "/history-project/static/media/Archangel.ad4a4be07f43a71f4c87.png",
     "static/media/August2.png": "/history-project/static/media/August2.fe1cb4671ed2a8c06c56.png",
+    "static/media/mapNarva1.png": "/history-project/static/media/mapNarva1.d6cf32ff18cfc8fb7957.png",
+    "static/media/mapLeasnaya.png": "/history-project/static/media/mapLeasnaya.a642574f09665838475b.png",
     "static/media/takeShipsInTow.png": "/history-project/static/media/takeShipsInTow.fa31b595effef6b49957.png",
     "static/media/NoterburgBattle.png": "/history-project/static/media/NoterburgBattle.2479240e20d29ab75de6.png",
     "static/media/BattleErestfer.png": "/history-project/static/media/BattleErestfer.2e997fbbe4621011ef9c.png",
@@ -36,6 +38,7 @@
     "static/media/sea.png": "/history-project/static/media/sea.bb43aaee55b3a53328a2.png",
     "static/media/KojuhovskieActions.png": "/history-project/static/media/KojuhovskieActions.ac690c3a56d774b87a4b.png",
     "static/media/NikitaZotov.png": "/history-project/static/media/NikitaZotov.15dbb17a6b418fc718f5.png",
+    "static/media/PolatavaBattleMap.png": "/history-project/static/media/PolatavaBattleMap.b43bd2ac76865885ce7b.png",
     "static/media/brusok.png": "/history-project/static/media/brusok.0d1f3dd0e8123d1cd463.png",
     "static/media/baraban.png": "/history-project/static/media/baraban.cf910b367a391cf91b69.png",
     "static/media/Lefort.png": "/history-project/static/media/Lefort.b378cabe3b6d76f4921e.png",
@@ -46,11 +49,11 @@
     "static/media/sword.png": "/history-project/static/media/sword.a6a59fbe2e72f04b348f.png",
     "index.html": "/history-project/index.html",
     "main.fe353895.css.map": "/history-project/static/css/main.fe353895.css.map",
-    "main.fd9d8866.js.map": "/history-project/static/js/main.fd9d8866.js.map",
+    "main.16d12cbd.js.map": "/history-project/static/js/main.16d12cbd.js.map",
     "787.1cb401b3.chunk.js.map": "/history-project/static/js/787.1cb401b3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe353895.css",
-    "static/js/main.fd9d8866.js"
+    "static/js/main.16d12cbd.js"
   ]
 }
