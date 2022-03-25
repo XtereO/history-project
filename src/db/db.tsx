@@ -43,6 +43,9 @@ import PoltavaBattle from "../assets/slides/PoltavaBattle.png";
 import AfterPoltavaBattle from "../assets/slides/AfterPoltavaBattle.png";
 import GangutBattle from "../assets/slides/GangutBattle.png";
 import PortretPetr1 from "../assets/PortretPetr1.png";
+import mapNarva1 from "../assets/slides/mapNarva1.png"
+import mapLesnaya from "../assets/slides/mapLeasnaya.png"
+import mapPoltavaBattle from "../assets/slides/PolatavaBattleMap.png"
 
 export const db = {
   [Navigation.EarlyYears]: [
@@ -500,8 +503,8 @@ export const db = {
         </div>
       </>,
       <ImgGroup
-        desription={"Поражение русских в первом сражении под Нарвой"}
-        imgs={[<img src={NarvaWar1} />]}
+        desription={"Поражение русских в первом сражении под Нарвой и карта расположения войск"}
+        imgs={[<img src={NarvaWar1} />, <img width={300} src={mapNarva1} />]}
         id={30}
       />
     ),
@@ -740,8 +743,8 @@ export const db = {
         досталось.
       </>,
       <ImgGroup
-        desription={"Сражение у деревни Лесной"}
-        imgs={[<img src={LevengauptBattle} />]}
+        desription={"Сражение у деревни Лесной и карта сражения"}
+        imgs={[<img src={LevengauptBattle} />,<img width={300} src={mapLesnaya} />]}
         id={45}
       />
     ),
@@ -836,8 +839,8 @@ export const db = {
         </div>
       </>,
       <ImgGroup
-        desription={"Полтавская Баталия"}
-        imgs={[<img src={PoltavaBattle} />]}
+        desription={"Полтавская Баталия и карта сражения"}
+        imgs={[<img src={PoltavaBattle} />,<img width={300} src={mapPoltavaBattle} />]}
         id={52}
       />
     ),
